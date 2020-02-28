@@ -15,17 +15,18 @@ private char[] Secret2;
 private char[] Secret1;
  public int error=0;
  public int d=0;
+public int j=0;
 	private BufferedReader br;
 	public String[] read () throws IOException {
-		int i=0;
+		
 
 		try {
 		br = new BufferedReader(new FileReader("dictionary.txt"));
 		String line=br.readLine();
-		while(line!=null && (i< words.length) ) {
+		while(line!=null && (j< words.length) ) {
 			if (line.length()!=0) {
-			words[i]=line.toLowerCase();
-			i++;
+			words[j]=line.toLowerCase();
+			j++;
 		}
 			line=br.readLine();
 	
@@ -53,7 +54,7 @@ private char[] Secret1;
 	public String selectRandomSecretWord() {
 		// TODO Auto-generated method stub
 		Random r=new Random();
-		int randomNumber=r.nextInt(words.length);
+		int randomNumber=r.nextInt(j);
 		Secretword =words[randomNumber];
 		 Secret1 = Secretword.toCharArray();
 		 Secret2 = Secretword.toCharArray();
