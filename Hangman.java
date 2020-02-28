@@ -132,7 +132,7 @@ public int j=0;
 	Scanner sc = new Scanner(System.in);  
    game.setDictionary(game.words);
    game.selectRandomSecretWord();
-   System.out.println(game.Secretword);
+ //  System.out.println(game.Secretword+"   (to be sure that it works correctly)");
 
    System.out.println("Enter the number of maximum errors:");
    int max1 = sc.nextInt();
