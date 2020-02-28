@@ -1,7 +1,6 @@
 package eg.edu.alexu.csd.datastructure.hangman;
 
 public interface IHangman {
-	 String[] words=new String[10] ;
 	
 	void setDictionary(String[] words);
 	
