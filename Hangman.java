@@ -92,21 +92,16 @@ public int j=0;
 
 		if(count==0) {
 			if(Character.isLetter(c)) {	
-			    System.out.println("Wrong guess\n");
+			    System.out.println("Wrong guess");
 				error++;
 				}
 				else if (!Character.isLetter(c)) {
-					System.out.println("Wrong input\n");
+					System.out.println("Wrong input");
 				}
 			
 		}else {System.out.println("good guess");}
 		
-		/*if(d==(Secretword.length())) {
-			System.out.println("Good job : you won");
-		}
-		else if (error==(attempts)) {
-			System.out.println("Hard Luck!");
-		}*/
+		
 		}
 		
 		
