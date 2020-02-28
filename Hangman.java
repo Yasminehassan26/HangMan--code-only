@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman implements IHangman {
-String[] words=new String[230];
+String[] words=new String[100000];
 public int attempts=0;
 public String[]array;
 private String Secretword ;
