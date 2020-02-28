@@ -137,6 +137,7 @@ public int j=0;
    System.out.println("Enter the number of maximum errors:");
    int max1 = sc.nextInt();
    game.setMaxWrongGuesses(max1);
+   System.out.println(game.Secret2);
 
 	try {	while(game.d<game.Secretword.length()&& (game.error<game.attempts)) {
 			   System.out.println("Enter the letter:");
